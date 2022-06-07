@@ -31,6 +31,7 @@ body{
 }
 
 .info_box {
+    display: none;
     width: 800px;
     height: 500px;
     max-height: 80%;
@@ -71,11 +72,28 @@ body{
 }
 .info_box .buttons button{
     margin: 0 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: var(--cream);
     font-size: 1rem;
     font-weight: bolder;
     padding: 5px 15px;
-    background-color: var(--blue);
-    color: var(--cream);
-    border-radius: 5px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+.buttons button.restart{
+    color: var(--cream);
+    background: var(--blue);
+}
+.buttons button.restart:hover{
+    background: var(--cream);
+    color: var(--blue);
+}
+.buttons button.quit{
+    color: var(--blue);
+       
+}
+.buttons button.quit:hover{
+    color: var(--cream);
+    background: var(--blue);
 }
