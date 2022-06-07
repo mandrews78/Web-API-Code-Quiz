@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timed Coding Quiz</title>
-    <link rel="stylesheet" href="./Assets/css/style.css">
-    <script defer src="./Assets/js/script.js"></script>
+    <link rel="stylesheet" href ="Assets/css/style.css">
+    <script defer src="/Assets/js/script.js"></script>
 </head>
-
 <body>
-    <div class="container">
-        <div id="title">Coding Quiz</div>
-        <div id="question-container" class="hide">
-        <div id="question">Question</div>
-        <div id="answer-buttons" class="btn-grid">
-            <button class="btn">Answer 1</button>
-            <button class="btn">Answer 2</button>
-            <button class="btn">Answer 3</button>
-            <button class="btn">Answer 4</button>
+    <h1>Timed Coding Quiz</h1>
+    <!--Start Quiz Button-->
+    <div class ="start_btn"><button>Start Quiz</button></div>
+
+    <!--Informantion Box-->
+    <div class="info_box">
+        <div class="info_title">
+            <span>Rules for this Quiz</span>
         </div>
+        <div class="info_list">
+            <div class="info">1.  You will only have <span>1 minute</span> to complete this quiz.</div>
+            <div class="info">2.  Once you select your answer, you can't reselect.</div>
+            <div class="info">3.  You can't exit the quiz while you are taking it.</div>
+            <div class="info">4.  You get points for each correct answer.</div>
+            <div class="info">5.  Time is deducted if you answer a question incorrectly.</div>
         </div>
-        <div class="controls">
-            <button id="start-btn" class="start-btn btn">Start Quiz</button>
-            <button id="next-btn" class="next-btn btn hide">Next Question</button>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="quit">Continue</button>
         </div>
     </div>
 </body>
-
 </html>
