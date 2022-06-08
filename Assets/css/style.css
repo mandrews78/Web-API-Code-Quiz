@@ -25,6 +25,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: 0 5px 10px 1px;
 }
 
 /* Start Quiz Button Styling*/
@@ -37,7 +38,6 @@ body {
 }
 
 .info_box{
-    display: none;
     width: 800px;
     height: 500px;
     max-height: 80%;
@@ -47,6 +47,9 @@ body {
     padding: 10px;
     box-shadow: 0 0 15px 1px;
     text-align: center;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
 }
 
 .info_box .info_title{
@@ -116,7 +119,6 @@ body {
 }
 
 .quiz_box{
-    display: none;
     width: 550px;
     border-radius: 15px;
     box-shadow: 0 0 15px 1px;
@@ -124,6 +126,9 @@ body {
     max-width: 80%;
     background-color: var(--gray);
     padding: 10px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
 
 }
 
@@ -294,6 +299,9 @@ footer .next_btn:hover{
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
     transition: all 0.3s ease;
     box-shadow: 0 0 15px 1px;
 }
