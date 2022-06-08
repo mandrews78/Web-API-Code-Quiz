@@ -98,18 +98,21 @@ body {
 }
 
 .buttons button.restart:hover{
-    background: var(--cream);
-    color: var(--blue);
+    color: var(--cream);
+    background: var(--darkblue);
+    border-color: var(--navy);
 }
 
 .buttons button.quit{
     color: var(--blue);
+    background-color: var(--cream);
 
 }
 
 .buttons button.quit:hover{
     color: var(--cream);
-    background: var(--blue);
+    background: var(--darkblue);
+    border-color: var(--navy);
 }
 
 .quiz_box{
@@ -321,7 +324,6 @@ footer .next_btn:hover{
     margin: 0 10px;
     height: 45px;
     padding: 0 20px;
-    color: var(--cream);
     border: none;
     outline: none;
     font-size: 20px;
@@ -331,23 +333,4 @@ footer .next_btn:hover{
     cursor: pointer;
     transition: all 0.3s ease;
    
-} 
-.buttons button.restart{
-    color: var(--cream);
-    background: var(--blue);
-}
-.buttons button.restart:hover{
-    color: var(--cream);
-    background: var(--darkblue);
-    border-color: var(--navy);
-    
-}
-.buttons button.quit {
-    color: var(--blue);
-    background-color: var(--cream);
-}
-.buttons button.quit:hover{
-    color: var(--cream);
-    background: var(--darkblue);
-    border-color: var(--navy);
 } 
