@@ -6,21 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timed Coding Quiz</title>
     <link rel="stylesheet" href ="Assets/css/style.css">
-    <script defer src="/Assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/8039d94590.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <main>
     
     <!--Start Quiz Button-->
     <div class ="start_btn"><button>Start Quiz</button></div>
 
     <!--Information Box-->
     <div class="info_box">
+          <!--Webpage that displays save high scores-->
+    <div class="highscores"><button>High Scores</button>
+        <a href="highscore.html">High Scores</a>
+    </div>
         <div class="info_title">
             <span>Rules for this Quiz</span>
         </div>
         <div class="info_list">
-            <div class="info">1.  You will only have <span>60 seconds</span> to complete this quiz.</div>
+            <div class="info">1.  You will only have <span>60 seconds</span> to complete the quiz</div>
             <div class="info">2.  Once you select your answer, you can't reselect.</div>
             <div class="info">3.  You can't exit the quiz while you are taking it.</div>
             <div class="info">4.  You get points for each correct answer.</div>
@@ -34,12 +38,19 @@
 
     <!-- Quiz Box-->
     <div class="quiz_box">
+      
+    <!--Timer-->
+    <div class="timer">
+        Time left:
+        <span id="time"> 0 </span>
+    </div>
         <header>
             <div class="title">Timed Coding Quiz</div>
             <div class="timer">
-                <div class="time_text">Time left:</div>
-                <div class="timer_sec">60</div>
+                <div class="time_left">Time left:</div>
+                <div class="timer_sec">15</div>
             </div>
+            <div class="time_line"></div>
         </header>
         <section>
             <div class="que_text">
@@ -88,7 +99,8 @@
             
         </div>
     </div>
-           
-
+    <script src="Assets/js/questions.js"></script>
+    <script src="Assets/js/script.js"></script>         
+</main>
 </body>
 </html>
