@@ -34,7 +34,67 @@ main {
     padding: 20px;
     border-radius: 8px;
 }
-
+  
+.inline-buttons {
+    display: inline-flex;
+}
+  
+/* Card Styles */
+  
+.card {
+    background-color: gray;
+    max-width: 80%;
+    margin-top: 15vh;
+    border: solid;
+    border-width: 2px;
+    padding: 5vw;
+    border-radius: 30px;
+    border-color: black;
+    box-shadow: 10px 5px 5px gray;
+  }
+  
+  /* Start Card Styles */
+  
+  #start-screen {
+    display: inline;
+    text-align: center;
+  }
+  
+  /* Question Card Styles */
+  
+  .choice-button {
+    width: 100%;
+    text-align: left;
+    margin: 5px;
+  }
+  
+  #result-div {
+    display: none;
+  }
+  
+  /* Score Card Styles */
+  
+  .inline-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  #initials {
+    width: 25%;
+    margin: 8px;
+    padding: 1vh;
+  }
+  
+  /* Leaderboard Card Styles */
+  
+  #back-button {
+    margin-right: 8px;
+  }
+  
+  .highscore-list {
+    padding-inline-start: 20px;
+  }
   /* Media Queries */
   
   @media screen and (min-width: 850px) {
@@ -47,7 +107,7 @@ main {
   @media (hover) {
     /* Stylings pertaining to hover pseudo-class*/
     a:hover {
-      color: #cbe1e0;
+      color: #0703eea8;
     }
   
     button:hover {
