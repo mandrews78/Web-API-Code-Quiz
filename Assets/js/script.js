@@ -43,6 +43,7 @@ const questions = [
     }
 ];
 
+//Cards
 const startCard = document.querySelector("#start-card");
 const questionCard = document.querySelector("#question-card");
 const scoreCard = document.querySelector("#score-card");
@@ -55,7 +56,6 @@ function hideCards() {
     scoreCard.setAttribute("hidden", true);
     leaderboardCard.setAttribute("hidden", true);
 }
-
 
 const resultDiv = document.querySelector("#results-div");
 const resultText = document.querySelector("#results-text");

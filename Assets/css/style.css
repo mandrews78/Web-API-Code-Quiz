@@ -11,7 +11,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(70, 70, 71);
+    background-color: #464647;
     color: whitesmoke;
     padding: 40px;
 }
@@ -44,10 +44,10 @@ main {
 .card {
     background-color: gray;
     max-width: 80%;
-    margin-top: 15vh;
+    margin-top: 45px;
     border: solid;
     border-width: 2px;
-    padding: 5vw;
+    padding: 40px;
     border-radius: 30px;
     border-color: black;
     box-shadow: 10px 5px 5px gray;
