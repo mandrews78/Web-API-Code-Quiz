@@ -1,109 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web API Quiz</title>
-    <link rel="stylesheet" href ="Assets/css/style.css">
-    <script src="https://kit.fontawesome.com/8039d94590.js" crossorigin="anonymous"></script>
+    <title>Javascript API Code Quiz</title>
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <!-- <script src="https://kit.fontawesome.com/8039d94590.js" crossorigin="anonymous"></script> -->
 </head>
+
 <body>
-  <main>
-    
-    <div class="highscores">
-        <a href="highscores.html">High Scores</a>
-    </div>
-    <!--Start Quiz Button-->
-    <div class ="start_btn"><button>Start Quiz</button></div>
+    <header>
+        <a id="leaderboard">View Highscores</a>
+        <time>Time: <span id="time"></span></time>
+    </header>
+    <main>
+        <!-- Quiz Box -->
+        <div id="start-card" class="card">
+            <h1>Javascript Coding Quiz</h1>
+            <p>See how well you do answering javascript coding questions</p><br>
+            <p>Each question you answer wrong will penalize you 15 seconds</p>
+            <button id="start-button" class="button">Start Quiz</button>
+        </div>
+        <!-- Quiz Questions -->
+        <div hidden id="question-card" class="card">
+            <h2 id="question-text"></h2>
 
-    <!--Information Box-->
-    <div class="info_box">
-          <!--Webpage that displays save high scores-->
-    <div class="highscores"><button>High Scores</button>
-        <a href="highscore.html">High Scores</a>
-    </div>
-        <div class="info_title">
-            <span>Rules for this Quiz</span>
-        </div>
-        <div class="info_list">
-            <div class="info">1.  You will only have <span>60 seconds</span> to complete the quiz</div>
-            <div class="info">2.  Once you select your answer, you can't reselect.</div>
-            <div class="info">3.  You can't exit the quiz while you are taking it.</div>
-            <div class="info">4.  You get points for each correct answer.</div>
-            <div class="info">5.  Time is deducted if you answer a question incorrectly.</div>
-        </div>
-        <div class="buttons">
-            <button class="quit">Exit Quiz</button>
-            <button class="restart">Continue</button>
-        </div>
-    </div>
+            <div id="quiz-options">
+                <button id="option0" class="button option-button"></button>
+                <button id="option1" class="button option-button"></button>
+                <button id="option2" class="button option-button"></button>
+                <button id="option3" class="button option-button"></button>
+            </div>
 
-    <!-- Quiz Box-->
-    <div class="quiz_box">
-      
-    <!--Timer-->
-    <div class="timer">
-        Time left:
-        <span id="time"> 0 </span>
-    </div>
-        <header>
-            <div class="title">Timed Coding Quiz</div>
-            <div class="timer">
-                <div class="time_left">Time left:</div>
-                <div class="timer_sec">15</div>
+            <div id="results-div">
+                <hr>
+                <p id="reults-text"></p>
             </div>
-            <div class="time_line"></div>
-        </header>
-        <section>
-            <div class="que_text">
-                <span>Which is a not a commonly used data type?</span>
-            </div>
-            <div class="option_list">
-                    <div class="option">
-                        <span>symbols</span>
-                        <div class="icon check"><i class="fa-solid fa-check"></i></div>
-                    </div>
-                    <div class="option">
-                        <span>boolean</span>
-                        <div class="icon xmark"><i class="fa-solid fa-xmark"></i></div>
-                    </div>
-                    <div class="option">
-                        <span>numbers</span>
-                    </div>
-                    <div class="option">
-                        <span>strings</span>
-                    </div>
-            </div>
-        </section>
-    
-        <!-- Quiz Box footer -->
-        <footer>
-            <div class="total_que">
-                <span><p>2 of 4 Questions</p></span>
-            </div>
-            <button class="next_btn">Next Que</button>
-        </footer>
-    </div>
+        </div>
+        <!-- Scores -->
+        <div hidden id="score-card" class="card">
+            <h2>You've completed the Quiz!</h2>
+            <p> Your final score is <span id="score"></span>.</p>
+            <form class="inline-form" id="submission">
+                <label for="initials">Enter Initials:</label>
+                <input type="text" id="initials">
+                <button id="submit-button" class="button">Submit</button>
+            </form>
+        </div>
+        <div hidden id="leaderboard-card" class="card">
+            <h2>High Scores</h2>
+            <ol id="highscore-list"></ol>
 
-    <!-- Results Box-->
-    <div class="results_box">
-        <div class="icon">
-            <i class="fa-solid fa-crown"></i> 
+            <div class="inline-buttons">
+                <button id="back-button" class="button">Back</button>
+                <button id="clear-button" class="button">Clear Scores</button>
+            </div>
         </div>
-        <div class="complete_text">You've completed the Quiz!</div>
-        <div class="score_text">
-            <span>you only got <p>2</p> out of <p>4</p></span>
-        </div>
-        <div class="buttons">
-            <button class="restart">Replay Quiz</button>
-            <button class="quit">Quit Quiz</button>
-        </div>
-            
-        </div>
-    </div>
-    <script src="Assets/js/questions.js"></script>
-    <script src="Assets/js/script.js"></script>         
-</main>
+
+    </main>
+    <script src="Assets/js/script.js"></script>
 </body>
+
 </html>
