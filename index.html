@@ -6,37 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript API Code Quiz</title>
-    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
     <!-- <script src="https://kit.fontawesome.com/8039d94590.js" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
     <header>
-        <a id="leaderboard">View Highscores</a>
-        <time>Time: <span id="time"></span></time>
+        <a id="leaderboard-link">
+            <h2>View Highscores</h2>
+        </a>
+        <time>
+            <h2>Time: <span id="time"></span></h2>
+        </time>
     </header>
     <main>
         <!-- Quiz Box -->
         <div id="start-card" class="card">
-            <h1>Javascript Coding Quiz</h1>
-            <p>See how well you do answering javascript coding questions</p><br>
-            <p>Each question you answer wrong will penalize you 15 seconds</p>
+            <h1>Coding Quiz</h1>
+            <p>See how well you do answering javascript coding questions</p>
+            <p>Each question you answer wrong will penalize you 10 seconds</p>
             <button id="start-button" class="button">Start Quiz</button>
         </div>
         <!-- Quiz Questions -->
         <div hidden id="question-card" class="card">
             <h2 id="question-text"></h2>
 
-            <div id="quiz-options">
-                <button id="option0" class="button option-button"></button>
-                <button id="option1" class="button option-button"></button>
-                <button id="option2" class="button option-button"></button>
-                <button id="option3" class="button option-button"></button>
+            <div id="quiz-choices">
+                <button id="choice0" class="button choice-button"></button>
+                <button id="choice1" class="button choice-button"></button>
+                <button id="choice2" class="button choice-button"></button>
+                <button id="choice3" class="button choice-button"></button>
             </div>
 
             <div id="results-div">
                 <hr>
-                <p id="reults-text"></p>
+                <p id="results-text"></p>
             </div>
         </div>
         <!-- Scores -->
@@ -50,7 +54,7 @@
             </form>
         </div>
         <div hidden id="leaderboard-card" class="card">
-            <h2>High Scores</h2>
+            <h1>High Scores</h1>
             <ol id="highscore-list"></ol>
 
             <div class="inline-buttons">
@@ -60,7 +64,7 @@
         </div>
 
     </main>
-    <script src="Assets/js/script.js"></script>
+    <script src="./Assets/js/script.js"></script>
 </body>
 
 </html>
