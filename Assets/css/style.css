@@ -53,15 +53,11 @@ main {
     box-shadow: 10px 5px 5px gray;
   }
   
-  /* Start Card Styles */
-  
   #start-screen {
     display: inline;
     text-align: center;
   }
-  
-  /* Question Card Styles */
-  
+   
   .choice-button {
     width: 100%;
     text-align: left;
@@ -71,9 +67,7 @@ main {
   #result-div {
     display: none;
   }
-  
-  /* Score Card Styles */
-  
+   
   .inline-form {
     display: flex;
     flex-wrap: wrap;
@@ -85,8 +79,6 @@ main {
     margin: 8px;
     padding: 1vh;
   }
-  
-  /* Leaderboard Card Styles */
   
   #back-button {
     margin-right: 8px;
